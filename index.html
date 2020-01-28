@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>ML Image recognizer - Juho Huhtanen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+
+<div id="container">
+<h1>Image recognizer using Tensorflow's Machine Learning datasets. ©Juho Huhtanen</h1>
+<input type="file"/>
+<p>Choose a picture from your computer (or use these stockphotos), and let the computer do the thinking! It should return you with couple guesses
+    with probabilities.</p>
+    <div id="thumbnails">
+        <img id="thumb1" src="img/cat.jpg" width="150px">
+        <img id="thumb2" src="img/food.jpg" width="150px">
+        <img id="thumb3" src="img/wave.jpg" width="150px">
+    </div>
+    
+<div id="imageSection"><img id="img" src=""></div>
+<div id="textSection"></div>
+<ul id="list"></ul>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
